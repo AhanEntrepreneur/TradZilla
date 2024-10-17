@@ -1,0 +1,295 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #121212; /* Dark background color */
+  color: #e0e0e0; /* Light gray text color */
+}
+
+/* Header Styles */
+.header {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  background : rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+}
+
+.logo img {
+  width: 200px; /* Adjust logo size */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+/* Navbar Styles */
+.navbar ul li a {
+  color: #0077ffd5; /* Light pink text color */
+  text-decoration: none;
+  font-weight: 600; /* Bold for better visibility */
+  font-size: 25px; /* Increase font size */
+  padding: 10px 15px; /* Add padding for larger clickable area */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.navbar ul li a:hover {
+  color: #fff; /* White text color on hover */
+}
+
+.navbar ul li a:hover {
+  color: #fff; /* White text color on hover */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.search-button {
+  background: #ff4081; /* Light pink background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #ff69b4; /* Darker pink background color on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: linear-gradient(to bottom, #121212, #212121); /* Gradient background */
+  padding: 200px; /* Increased padding for larger hero section */
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px; /* Large font size */
+  margin-bottom: 20px;
+}
+
+.tradzilla {
+  font-family: 'Cinzel', serif; /* Use the new font */
+  color: #008cffc4; /* Bright yellow color */
+  font-weight: 750; /* Bold weight for emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0); /* Optional shadow for better visibility */
+}
+
+.hero p {
+  font-size: 24px; /* Medium font size */
+  margin-bottom: 40px;
+}
+
+.hero button {
+  background: #ff4081; /* Light pink background color */
+  color: #fff; /* White text color */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: #ff69b4; /* Darker pink background color on hover */
+}
+
+/* NFT Showcase Section Styles */
+.nft-showcase {
+  padding: 20px;
+  background: #212121; /* Dark gray background color */
+}
+
+.nft-showcase h2 {
+  font-size: 36px; /* Large font size */
+  margin-bottom: 20px;
+}
+
+.nft-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Adjusted grid columns for larger NFT containers */
+  grid-gap: 20px;
+}
+
+.nft {
+  background: #fff; /* White background color */
+  padding: 20px;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.nft img {
+  width: 100%;
+  height: 380px; /* Increased image height for larger NFT containers */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.nft h2 {
+  font-size: 18px; /* Medium font size */
+  margin-bottom: 10px;
+}
+
+.nft p {
+  font-size: 14px; /* Small font size */
+  color: #666; /* Dark gray text color */
+}
+
+.nft button {
+  background: #ff4081; /* Light pink background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nft button:hover {
+  background: #ff69b4; /* Darker pink background color on hover */
+}
+
+.nft:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+  padding: 50px;
+  background: #212121; /* Dark gray background color */
+}
+
+.testimonials h2 {
+  font-size: 36px; /* Large font size */
+  margin-bottom: 20px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjusted grid columns for testimonials */
+  grid-gap: 20px;
+}
+
+.testimonial {
+  background: #fff; /* White background color */
+  padding: 20px;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.testimonial p {
+  font-size: 16px; /* Medium font size */
+  color: #666; /* Dark gray text color */
+}
+
+.testimonial h4 {
+  font-size: 18px; /* Medium font size */
+  margin-bottom: 10px;
+}
+
+/* Call-to-Action Section Styles */
+.cta {
+  background: #212121; /* Dark gray background color */
+  padding: 50px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 36px; /* Large font size */
+  margin-bottom: 20px;
+}
+
+.cta button {
+  background: #ff4081; /* Light pink background color */
+  color: #fff; /* White text color */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background: #ff69b4; /* Darker pink background color on hover */
+}
+
+/* Footer Styles */
+.footer {
+  background: #2c3e50; /* Dark blue background color */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.affiliate-button {
+  background: #ff4081; /* Light pink background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.affiliate-button:hover {
+  background: #ff69b4; /* Darker pink background color on hover */
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: #fff; /* White text color */
+}
+
+.social-media a:hover {
+  color: #ff4081; /* Light pink text color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .search-container {
+    margin: 10px;
+  }
+  .hero {
+    padding: 100px;
+  }
+  .nft-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+}
