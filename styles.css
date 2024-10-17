@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  background : rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
 }
 
 .logo img {
@@ -42,10 +42,6 @@ body {
   font-size: 25px; /* Increase font size */
   padding: 10px 15px; /* Add padding for larger clickable area */
   transition: color 0.3s ease; /* Smooth transition for color change */
-}
-
-.navbar ul li a:hover {
-  color: #fff; /* White text color on hover */
 }
 
 .navbar ul li a:hover {
@@ -140,7 +136,7 @@ body {
   border-radius: 10px 10px 0 0;
 }
 
-.nft h2 {
+ .nft h2 {
   font-size: 18px; /* Medium font size */
   margin-bottom: 10px;
 }
@@ -182,7 +178,7 @@ body {
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Adjusted grid columns for testimonials */
-  grid-gap: 20px;
+  grid-gap: 20 px;
 }
 
 .testimonial {

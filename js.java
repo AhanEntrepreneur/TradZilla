@@ -18,12 +18,14 @@ searchInput.addEventListener('input', (e) => {
   }
 });
 
-// Responsive Navigation
-const navbarToggle = document.querySelector('.navbar-toggle');
-const navbarMenu = document.querySelector('.navbar-menu');
+/// Get the hamburger button and navbar
+const hamburger = document.querySelector('.hamburger');
+const navbar = document.querySelector('.navbar');
 
-navbarToggle.addEventListener('click', () => {
-  navbarMenu.classList.toggle('active');
+// Add an event listener to the hamburger button
+hamburger.addEventListener('click', () => {
+  // Toggle the navbar
+  navbar.classList.toggle('active');
 });
 
 // Smooth Scrolling
