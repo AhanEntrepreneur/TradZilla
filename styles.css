@@ -25,6 +25,15 @@ body {
   width: 200px; /* Adjust logo size */
 }
 
+.hamburger {
+  display: none; /* Hide by default */
+  background: none;
+  border: none;
+  color: #fff; /* White color for the icon */
+  font-size: 30px; /* Size of the hamburger icon */
+  cursor: pointer;
+}
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -136,13 +145,13 @@ body {
   border-radius: 10px 10px 0 0;
 }
 
- .nft h2 {
+.nft h2 {
   font-size: 18px; /* Medium font size */
   margin-bottom: 10px;
 }
 
 .nft p {
-  font-size: 14px; /* Small font size */
+  font-size:  14px; /* Small font size */
   color: #666; /* Dark gray text color */
 }
 
@@ -178,7 +187,7 @@ body {
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Adjusted grid columns for testimonials */
-  grid-gap: 20 px;
+  grid-gap: 20px;
 }
 
 .testimonial {
@@ -270,22 +279,34 @@ body {
   .header {
     flex-direction: column;
   }
-  .navbar ul {
-    flex-direction: column;
+  .navbar {
+    display: none; /* Hide navbar by default on mobile */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width */
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    position: absolute; /* Position it absolutely */
+    top: 60px; /* Adjust based on header height */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it appears above other content */
   }
-  .search-container {
-    margin: 10px;
+  .navbar ul {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Add padding */
+  }
+  .navbar ul li {
+    margin: 10px 0; /* Space between items */
   }
   .hero {
-    padding: 100px;
+    padding: 100px; /* Reduced padding for smaller hero section */
   }
   .nft-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Adjusted grid columns for smaller NFT containers */
   }
-  .testimonial-grid {
-    grid-template-columns: repeat(1, 1fr);
+  .nft {
+    padding: 10px;
   }
-  .footer-content {
-    flex-direction: column;
+  .nft img {
+    height: 200px; /* Reduced image height for smaller NFT containers */
   }
-}
+  .hamburger {
+    display

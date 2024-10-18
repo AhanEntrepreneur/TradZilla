@@ -18,13 +18,11 @@ searchInput.addEventListener('input', (e) => {
   }
 });
 
-/// Get the hamburger button and navbar
+// Hamburger Menu Functionality
 const hamburger = document.querySelector('.hamburger');
 const navbar = document.querySelector('.navbar');
 
-// Add an event listener to the hamburger button
 hamburger.addEventListener('click', () => {
-  // Toggle the navbar
   navbar.classList.toggle('active');
 });
 
